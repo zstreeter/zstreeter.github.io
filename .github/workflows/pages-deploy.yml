@@ -39,7 +39,7 @@ jobs:
         run: |
           wget https://github.com/quarto-dev/quarto-cli/releases/latest/download/quarto-1.6.39-linux-amd64.tar.gz
           tar -xvzf quarto-1.6.39-linux-amd64.tar.gz
-          sudo cp quarto/bin/quarto /usr/local/bin/
+          sudo cp quarto-1.6.39/bin/quarto /usr/local/bin/
 
       - name: Detect Changed Files
         id: detect_changes
