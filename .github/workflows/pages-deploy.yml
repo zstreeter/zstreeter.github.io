@@ -35,6 +35,27 @@ jobs:
           # If using the 'assets' git submodule from Chirpy Starter, uncomment above
           # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
 
+      - name: Setup Quarto
+        run: |
+          wget https://github.com/quarto-dev/quarto-cli/releases/latest/download/quarto-linux-amd64.tar.gz
+          tar -xvzf quarto-linux-amd64.tar.gz
+          sudo cp quarto/bin/quarto /usr/local/bin/
+
+      - name: Detect Changed Files
+        id: detect_changes
+        run: |
+          qmd_files=$(git diff --name-only HEAD^ HEAD | grep '\.qmd' || true)
+          echo "::set-output name=qmd_files::$qmd_files"
+
+      - name: Render New or Updated .qmd Files
+        if: ${{ steps.detect_changes.outputs.qmd_files != '' }}
+        run: |
+          for file in ${{ steps.detect_changes.outputs.qmd_files }}; do
+            if [ -n "$file" ]; then
+              quarto render "$file" --to markdown
+            fi
+          done
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
