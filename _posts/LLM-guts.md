@@ -1,4 +1,5 @@
 ---
+author: zstreet
 title: LLM-guts
 date: 2024-12-5 7:24 -0600
 categories: [AI, Deep Learning]
