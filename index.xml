@@ -10,7 +10,7 @@
 <atom:link href="https://zstreeter.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>A nice pipeline to share my thoughts.</description>
 <generator>quarto-1.8.27</generator>
-<lastBuildDate>Thu, 05 Dec 2024 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 05 Dec 2024 06:00:00 GMT</lastBuildDate>
 <item>
   <title>LLM-guts</title>
   <dc:creator>Zachary Streeter</dc:creator>
@@ -34,7 +34,7 @@
   <category>AI</category>
   <category>Deep Learning</category>
   <guid>https://zstreeter.github.io/posts/2024-12-05-LLMguts/</guid>
-  <pubDate>Thu, 05 Dec 2024 00:00:00 GMT</pubDate>
+  <pubDate>Thu, 05 Dec 2024 06:00:00 GMT</pubDate>
   <media:content url="https://zstreeter.github.io/images/LLM.webp" medium="image" type="image/webp"/>
 </item>
 </channel>
