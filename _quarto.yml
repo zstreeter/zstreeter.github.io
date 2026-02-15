@@ -1,6 +1,10 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"
+    - "posts/**/*.qmd"
+    - "!*.md"
 
 website:
   title: "Dr. Zachary Streeter"

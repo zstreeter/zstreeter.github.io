@@ -24,3 +24,6 @@ Thumbs.db
 # NPM (if ever needed)
 node_modules/
 package-lock.json
+
+/.quarto/
+**/*.quarto_ipynb
