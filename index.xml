@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Dr. Zachary Streeter</title>
+<link>https://zstreeter.github.io/</link>
+<atom:link href="https://zstreeter.github.io/index.xml" rel="self" type="application/rss+xml"/>
+<description>A nice pipeline to share my thoughts.</description>
+<generator>quarto-1.8.27</generator>
+<lastBuildDate>Thu, 05 Dec 2024 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>LLM-guts</title>
+  <dc:creator>Zachary Streeter</dc:creator>
+  <link>https://zstreeter.github.io/posts/2024-12-05-LLMguts/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="llm-guts" class="level1">
+<h1>LLM-guts</h1>
+<p>Here is my post about my findings peeking under-the-hood of LLMs. See if I can use quarto for this post as well…</p>
+
+
+<!-- -->
+
+</section>
+
+ ]]></description>
+  <category>AI</category>
+  <category>Deep Learning</category>
+  <guid>https://zstreeter.github.io/posts/2024-12-05-LLMguts/</guid>
+  <pubDate>Thu, 05 Dec 2024 06:00:00 GMT</pubDate>
+  <media:content url="https://zstreeter.github.io/images/LLM.webp" medium="image" type="image/webp"/>
+</item>
+</channel>
+</rss>
