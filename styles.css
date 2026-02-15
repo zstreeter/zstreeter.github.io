@@ -1,0 +1,13 @@
+/* Round the sidebar avatar/logo */
+.sidebar-logo {
+  border-radius: 50%;
+  max-width: 120px;
+  margin-bottom: 0.5rem;
+}
+
+/* Tighten sidebar subtitle spacing */
+.sidebar-subtitle {
+  font-style: italic;
+  opacity: 0.85;
+  margin-top: -0.25rem;
+}

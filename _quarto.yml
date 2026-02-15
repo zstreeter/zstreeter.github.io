@@ -1,0 +1,51 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Dr. Zachary Streeter"
+  description: "A nice pipeline to share my thoughts."
+  site-url: https://zstreeter.github.io
+  favicon: images/Donatello.jpg
+
+  search: true
+  open-graph: true
+  twitter-card: true
+
+  sidebar:
+    style: floating
+    background: dark
+    logo: images/Donatello.jpg
+    title: "Dr. Zachary Streeter"
+    subtitle: "Fear is the mind-killer"
+    contents:
+      - text: Blog
+        href: index.qmd
+      - text: About
+        href: about.qmd
+    tools:
+      - icon: github
+        href: https://github.com/zstreeter
+      - icon: linkedin
+        href: https://www.linkedin.com/in/zachary-streeter-ph-d-44a323102/
+      - icon: envelope
+        href: mailto:zacharylouis42@gmail.com
+      - icon: rss
+        href: index.xml
+
+  page-footer:
+    center: "&copy; 2024 Dr. Zachary Streeter"
+
+format:
+  html:
+    theme:
+      dark: darkly
+      light: flatly
+    css: styles.css
+    toc: true
+    code-fold: true
+    code-tools: true
+    highlight-style: github-dark
+
+execute:
+  freeze: auto

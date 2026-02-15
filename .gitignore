@@ -1,27 +1,26 @@
-# Bundler cache
-.bundle
-vendor
-Gemfile.lock
+# Quarto render output
+_site/
+.quarto/
 
-# Jekyll cache
-.jekyll-cache
-.jekyll-metadata
-_site
+# Python
+__pycache__/
+*.py[cod]
+.venv/
 
-# RubyGems
-*.gem
+# Jupyter
+.ipynb_checkpoints/
 
-# NPM dependencies
-node_modules
-package-lock.json
-
-# IDE configurations
+# IDE
 .idea
 .vscode/*
 !.vscode/settings.json
 !.vscode/extensions.json
 !.vscode/tasks.json
 
-# Misc
-_sass/vendors
-assets/js/dist
+# OS
+.DS_Store
+Thumbs.db
+
+# NPM (if ever needed)
+node_modules/
+package-lock.json

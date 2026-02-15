@@ -1,14 +1,13 @@
 ---
-author: zstreet
-format: markdown
-title: LLM-guts
-date: 2024-12-5 7:24 -0600
+title: "LLM-guts"
+author: "Zachary Streeter"
+date: 2024-12-05
 categories: [AI, Deep Learning]
 tags: [ai, llm]
-image: /assets/img/LLM.webp
-description: Short summary of the post.
-# toc: false
-# comments: false
+image: /images/LLM.webp
+description: "Short summary of the post."
+aliases:
+  - /posts/LLMguts/
 ---
 
 # LLM-guts
