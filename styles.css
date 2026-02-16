@@ -1,13 +1,195 @@
-/* Round the sidebar avatar/logo */
-.sidebar-logo {
-  border-radius: 50%;
-  max-width: 120px;
-  margin-bottom: 0.5rem;
+/*
+ * Chirpy-like aesthetic for Quarto docked sidebar
+ */
+
+/* ── Sidebar ─────────────────────────────────────────── */
+
+/* Dark sidebar background matching Chirpy's near-black */
+#quarto-sidebar {
+  background-color: #1b1b1e !important;
+  border-right: none !important;
 }
 
-/* Tighten sidebar subtitle spacing */
+/* Center everything in the sidebar */
+.sidebar-title,
+.sidebar-subtitle,
+.sidebar-logo,
+#quarto-sidebar .sidebar-navigation .sidebar-item {
+  text-align: center;
+}
+
+/* Circular avatar with subtle ring */
+.sidebar-logo {
+  border-radius: 50%;
+  max-width: 110px;
+  margin: 1.5rem auto 0.75rem auto;
+  display: block;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.sidebar-logo:hover {
+  transform: scale(1.03);
+}
+
+/* Site title */
+.sidebar-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: #e8e8e8 !important;
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+/* Tagline */
 .sidebar-subtitle {
+  font-size: 0.8rem;
   font-style: italic;
-  opacity: 0.85;
-  margin-top: -0.25rem;
+  color: rgba(255, 255, 255, 0.5) !important;
+  margin-top: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Nav links — uppercase, spaced, Chirpy-style */
+#quarto-sidebar .sidebar-navigation .sidebar-item .sidebar-item-text {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.2s ease;
+}
+
+#quarto-sidebar .sidebar-navigation .sidebar-item .sidebar-item-text:hover {
+  color: #ffffff;
+}
+
+/* Active nav link */
+#quarto-sidebar .sidebar-navigation .sidebar-item .sidebar-item-text.active {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Space out nav items */
+#quarto-sidebar .sidebar-navigation .sidebar-item {
+  padding: 0.35rem 0;
+}
+
+/* Sidebar tools (social icons) — horizontal row at bottom */
+.sidebar-tools-main {
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sidebar-tools-main a {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+}
+
+.sidebar-tools-main a:hover {
+  color: #ffffff !important;
+}
+
+/* ── Content Area ────────────────────────────────────── */
+
+/* Clean content spacing */
+#quarto-content {
+  padding-top: 1.5rem;
+}
+
+/* Blog listing cards — cleaner presentation */
+.quarto-listing-default .listing-item {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+  padding: 1.25rem 0;
+}
+
+.quarto-listing-default .listing-item:last-child {
+  border-bottom: none;
+}
+
+/* Post title in listing */
+.quarto-listing-default .listing-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Post description */
+.quarto-listing-default .listing-description {
+  color: rgba(var(--bs-body-color-rgb), 0.7);
+  font-size: 0.9rem;
+}
+
+/* Post metadata (date, categories) */
+.quarto-listing-default .listing-date,
+.quarto-listing-default .listing-categories {
+  font-size: 0.8rem;
+  opacity: 0.65;
+}
+
+/* Listing thumbnail */
+.quarto-listing-default .listing-image {
+  border-radius: 6px;
+}
+
+/* ── Page Footer ─────────────────────────────────────── */
+
+.nav-footer {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  border-top: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+/* ── Typography ──────────────────────────────────────── */
+
+/* Slightly tighter line height for body text */
+body {
+  line-height: 1.7;
+}
+
+/* Post title on post pages */
+.quarto-title-block .title {
+  font-weight: 700;
+}
+
+/* ── Dark theme adjustments ──────────────────────────── */
+
+/* Ensure sidebar stays dark even in light mode */
+body.quarto-light #quarto-sidebar {
+  background-color: #1b1b1e !important;
+}
+
+body.quarto-light #quarto-sidebar .sidebar-title {
+  color: #e8e8e8 !important;
+}
+
+body.quarto-light #quarto-sidebar .sidebar-subtitle {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+body.quarto-light #quarto-sidebar .sidebar-item-text {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+body.quarto-light #quarto-sidebar .sidebar-item-text:hover {
+  color: #ffffff !important;
+}
+
+body.quarto-light .sidebar-tools-main a {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+body.quarto-light .sidebar-tools-main a:hover {
+  color: #ffffff !important;
+}
+
+/* ── Search ──────────────────────────────────────────── */
+
+/* Tone down search bar in sidebar */
+#quarto-sidebar .sidebar-search {
+  margin-top: 0.5rem;
 }

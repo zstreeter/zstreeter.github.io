@@ -17,7 +17,7 @@ website:
   twitter-card: true
 
   sidebar:
-    style: floating
+    style: docked
     background: dark
     logo: images/Donatello.jpg
     title: "Dr. Zachary Streeter"
@@ -38,7 +38,7 @@ website:
         href: index.xml
 
   page-footer:
-    center: "&copy; 2024 Dr. Zachary Streeter"
+    center: "&copy; 2025 Dr. Zachary Streeter"
 
 format:
   html:

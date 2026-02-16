@@ -4,8 +4,9 @@ listing:
   contents: posts
   sort: "date desc"
   type: default
-  categories: true
+  categories: false
   feed: true
+  fields: [image, date, title, description, categories]
 page-layout: full
 title-block-banner: false
 ---
