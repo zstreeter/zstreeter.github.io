@@ -53,3 +53,13 @@ format:
 
 execute:
   freeze: auto
+
+# Posts come out of an Obsidian vault via publish-post, which also refreshes
+# _extensions/obsidian. This pair is what the vault template uses, so a draft
+# renders here exactly as it does there: [[wikilinks]], [[@citekeys]],
+# > [!callouts] and ==marks==. `at: pre-ast` is load-bearing (callouts must be
+# produced before Quarto normalizes the document).
+from: markdown+wikilinks_title_after_pipe+mark
+filters:
+  - at: pre-ast
+    path: _extensions/obsidian/obsidian.lua
