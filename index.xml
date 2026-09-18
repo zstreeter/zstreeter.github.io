@@ -9,7 +9,7 @@
 <link>https://zstreeter.github.io/</link>
 <atom:link href="https://zstreeter.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>A nice pipeline to share my thoughts.</description>
-<generator>quarto-1.8.27</generator>
+<generator>quarto-1.10.18</generator>
 <lastBuildDate>Thu, 05 Dec 2024 00:00:00 GMT</lastBuildDate>
 <item>
   <title>LLM-guts</title>
